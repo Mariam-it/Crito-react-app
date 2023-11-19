@@ -1,0 +1,58 @@
+.signup {
+    position: relative;
+    background-color: #F0EFE9;
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    .signup .container {
+      display: grid;
+    }
+  }
+  @media (min-width: 992px) {
+    .signup .container {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+  .signup .container .heading {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 768px) {
+    .signup .container .heading {
+      justify-self: center;
+    }
+  }
+  .signup .container .heading .title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    .signup .container .subscribe {
+      justify-self: center;
+    }
+  }
+  .signup .container .subscribe input {
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: none;
+  }
+  .signup .container .subscribe input:focus {
+    outline: none;
+  }
+  .signup .container .subscribe .btn {
+    margin-left: 20px;
+  }
+  .signup .container .subscribe .btn i {
+    margin-left: 8px;
+  }
+  .signup .container img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+  }
+  @media (min-width: 992px) {
+    .signup .container img {
+      width: 10%;
+    }
+  }

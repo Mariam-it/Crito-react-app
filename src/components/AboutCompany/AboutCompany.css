@@ -1,0 +1,101 @@
+@media (min-width: 768px) {
+    .about-company .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  .about-company .container .image-item {
+    position: relative;
+  }
+  .about-company .container .image-item img {
+    width: 100%;
+  }
+  .about-company .container .image-item .bg {
+    background-color: #BEEBFF;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    height: 120px;
+    width: 260px;
+    padding: 20px;
+  }
+  @media (min-width: 768px) {
+    .about-company .container .image-item .bg {
+      left: -20px;
+    }
+  }
+  .about-company .container .image-item .bg .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .about-company .container .image-item .bg .title span {
+    color: #F94D1C;
+    margin-left: 10px;
+  }
+  .about-company .container .content {
+    margin: 20px 0;
+  }
+  .about-company .container .content span {
+    color: #F94D1C;
+  }
+  .about-company .container .content .title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  @media (min-width: 992px) {
+    .about-company .container .content .title {
+      font-size: 36px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content .title {
+      font-size: 45px;
+    }
+  }
+  .about-company .container .content .description {
+    padding: 30px 0;
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content .description {
+      margin-top: 50px;
+    }
+  }
+  .about-company .container .content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 992px) {
+    .about-company .container .content .buttons {
+      margin-top: 100px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content .buttons {
+      margin-top: 150px;
+      justify-content: flex-start;
+    }
+  }
+  @media (min-width: 1200px) {
+    .about-company .container .content .buttons .btn {
+      padding: 8px 30px;
+    }
+  }
+  .about-company .container .content .buttons .left {
+    background-color: #191919;
+    color: #FFFFFF;
+  }
+  .about-company .container .content .buttons .left i {
+    margin-left: 10px;
+  }
+  .about-company .container .content .buttons .right {
+    background-color: transparent;
+    display: flex;
+    align-self: center;
+  }
+  .about-company .container .content .buttons .right i {
+    font-size: 30px;
+    margin-right: 10px;
+  }

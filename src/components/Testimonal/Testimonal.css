@@ -1,0 +1,74 @@
+.testimonial {
+    padding: 20px;
+    background-color: #F9D783;
+    display: grid;
+  }
+  @media (min-width: 768px) {
+    .testimonial {
+      padding-bottom: 40px;
+    }
+  }
+  @media (min-width: 992px) {
+    .testimonial {
+      padding-bottom: 60px;
+    }
+  }
+  .testimonial .container {
+    display: grid;
+    background-color: #FFFFFF;
+  }
+  .testimonial .container .heading {
+    margin-top: 40px;
+  }
+  .testimonial .container .heading span {
+    color: #F94D1C;
+  }
+  .testimonial .container .heading .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .testimonial .container .boxes {
+    margin-top: 30px;
+    display: grid;
+    row-gap: 30px;
+  }
+  @media (min-width: 992px) {
+    .testimonial .container .boxes {
+      grid-template-columns: repeat(3, 1fr);
+      -moz-column-gap: 20px;
+           column-gap: 20px;
+    }
+  }
+  .testimonial .container .boxes .box .stars i {
+    color: #F94D1C;
+  }
+  .testimonial .container .boxes .box .description {
+    margin-bottom: 20px;
+  }
+  .testimonial .container .boxes .box .client {
+    display: flex;
+    gap: 10px;
+  }
+  .testimonial .container .boxes .box .client img {
+    aspect-ratio: 1/1;
+    width: 10%;
+    border-radius: 50%;
+  }
+  @media (min-width: 992px) {
+    .testimonial .container .boxes .box .client img {
+      width: 15%;
+    }
+  }
+  .testimonial .container .boxes .box .client .client-info .name {
+    font-weight: bold;
+  }
+  .testimonial .container .btn {
+    background-color: #191919;
+    color: #FFFFFF;
+    justify-self: center;
+    margin: 30px 0;
+  }
+  .testimonial .container .btn i {
+    margin-left: 8px;
+  }
+  

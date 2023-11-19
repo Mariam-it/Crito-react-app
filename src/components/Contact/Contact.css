@@ -1,0 +1,35 @@
+.contact-breadcrumb {
+    background-color: #F0EFE9;
+    display: grid;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .contact-breadcrumb .header {
+    display: grid;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+  .contact-breadcrumb .header .menu {
+    display: flex;
+    gap: 10px;
+  }
+  .contact-breadcrumb .header .menu .current {
+    font-weight: bold;
+  }
+  .contact-breadcrumb .title {
+    font-weight: bold;
+    justify-self: center;
+    font-size: 24px;
+  }
+  @media (min-width: 992px) {
+    .contact-breadcrumb .title {
+      font-size: 45px;
+    }
+  }
+  .contact-breadcrumb img {
+    position: absolute;
+    max-width: 50%;
+    left: 0;
+    bottom: 0;
+    max-height: 200px;
+  }

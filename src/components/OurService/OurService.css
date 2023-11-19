@@ -1,0 +1,80 @@
+.our-service {
+  background-color: #F0EFE9;
+  padding: 30px;
+}
+.our-service .container {
+  display: grid;
+}
+.our-service .container .heading span {
+  color: #F94D1C;
+}
+.our-service .container .heading .title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .our-service .container .heading .title {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .our-service .container .heading .title {
+    font-size: 45px;
+  }
+}
+.our-service .container .boxes {
+  display: grid;
+  row-gap: 10px;
+}
+@media (min-width: 992px) {
+  .our-service .container .boxes {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .our-service .container .boxes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+.our-service .container .boxes .box {
+  background-color: #FFFFFF;
+  padding: 50px 30px 30px 30px;
+}
+.our-service .container .boxes .box .title {
+  font-weight: bold;
+  position: relative;
+}
+.our-service .container .boxes .box .title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+}
+.our-service .container .boxes .box .icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.our-service .container .boxes .box .icon i {
+  font-size: 30px;
+}
+.our-service .container .boxes .box:hover {
+  background-color: #F9D783;
+}
+.our-service .container .boxes .box:hover i {
+  color: white;
+}
+.our-service .container .btn {
+  background-color: transparent;
+  border: 1px solid black;
+  margin-top: 20px;
+  justify-self: center;
+}
+.our-service .container .btn i {
+  margin-left: 10px;
+}

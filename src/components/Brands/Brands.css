@@ -1,0 +1,34 @@
+/* @media (min-width: 1200px) {
+  .brands {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+} */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+
+}
+.test{
+  overflow: hidden;
+}
+.carosell-brands {
+  overflow: hidden;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+.carosell-brands .brands {
+  display: inline-flex;
+  animation: 15s slide infinite linear;
+}
+
+.carosell-brands:hover .brands  {
+  animation-play-state: paused;
+}

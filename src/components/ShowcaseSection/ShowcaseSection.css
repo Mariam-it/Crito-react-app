@@ -1,0 +1,109 @@
+.showcase {
+    background-color: #F0EFE9;
+    position: relative;
+  }
+  .showcase .container {
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    .showcase .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      direction: rtl;
+      padding-bottom: 0;
+    }
+  }
+  .showcase .container img {
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    .showcase .container .showcaseItem {
+      direction: ltr;
+    }
+  }
+  @media (min-width: 992px) {
+    .showcase .container .showcaseItem {
+      max-width: 480px;
+    }
+  }
+  .showcase .container .showcaseItem .title {
+    font-weight: bolder;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  @media (min-width: 992px) {
+    .showcase .container .showcaseItem .title {
+      font-size: 60px;
+    }
+  }
+  .showcase .container .showcaseItem .description {
+    margin: 20px 0;
+  }
+  @media (min-width: 992px) {
+    .showcase .container .showcaseItem .description {
+      margin: 40px 0;
+      font-size: 20px;
+    }
+  }
+  .showcase .container .showcaseItem .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 768px) {
+    .showcase .container .showcaseItem .buttons {
+      gap: 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    .showcase .container .showcaseItem .buttons {
+      margin-top: 100px;
+    }
+  }
+  .showcase .container .showcaseItem .buttons .btn {
+    max-width: 200px;
+    justify-self: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  @media (min-width: 992px) {
+    .showcase .container .showcaseItem .buttons .btn {
+      max-width: auto;
+    }
+  }
+  @media (min-width: 992px) {
+    .showcase .container .showcaseItem .buttons .btn {
+      justify-self: flex-start;
+    }
+  }
+  @media (min-width: 1200px) {
+    .showcase .container .showcaseItem .buttons .btn {
+      padding: 8px 30px;
+    }
+  }
+  .showcase .container .showcaseItem .buttons .btn i {
+    margin-left: 10px;
+  }
+  .showcase .container .showcaseItem .buttons .secondaryBtn {
+    background-color: transparent;
+    border: 1px solid #191919;
+  }
+  .showcase .effekt {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+  }
+  @media (min-width: 768px) {
+    .showcase .effekt {
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }

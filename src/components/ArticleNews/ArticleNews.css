@@ -1,0 +1,183 @@
+.article-details {
+  margin: 40px 0;
+}
+.article-details .container .content .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.article-details .container .content .details {
+  display: flex;
+}
+.article-details .container .content .details .date {
+  font-weight: 400;
+  margin: 10px 0 30px 0;
+}
+.article-details .container .content .details .light {
+  width: 10px;
+  height: 10px;
+  background-color: #F9D783;
+  border-radius: 50%;
+  align-self: center;
+  margin: 10px 15px 30px 15px;
+}
+.article-details .container .content .details .category {
+  font-weight: 400;
+  margin: 10px 0 30px 0;
+}
+.article-details .container .content .details .author {
+  font-weight: 400;
+  margin: 10px 0 30px 0;
+}
+.article-details .container .article {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  .article-details .container .article {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .article-details .container .article {
+    grid-template-columns: 7fr 4fr;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+  }
+}
+.article-details .container .article .article-content {
+  margin-bottom: 40px;
+}
+.article-details .container .article .article-content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.article-details .container .article .article-content .text .citat {
+  display: flex;
+  gap: 10px;
+}
+.article-details .container .article .article-content .text .citat .bold {
+  font-weight: 500;
+  margin-left: 30px;
+  position: relative;
+}
+.article-details .container .article .article-content .text .citat .bold i {
+  font-size: 24px;
+  position: absolute;
+  left: -30px;
+  top: -5px;
+}
+.article-details .container .article .article-content .tags {
+  margin-top: 30px;
+}
+.article-details .container .article .article-content .tags .tag {
+  background-color: #f3f3f3;
+  padding: 5px 20px;
+  border-radius: 40px;
+  display: inline-block;
+  margin: 10px;
+}
+.article-details .container .article .article-content .tags .tag a {
+  color: #191919;
+  text-decoration: none;
+}
+.article-details .container .article .find-posts .search {
+  position: relative;
+}
+.article-details .container .article .find-posts .search input {
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 15px 50px;
+  border-radius: 40px;
+}
+@media (min-width: 768px) {
+  .article-details .container .article .find-posts .search input {
+    padding: 10px 50px;
+  }
+}
+.article-details .container .article .find-posts .search .icon i {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: #191919;
+}
+@media (min-width: 768px) {
+  .article-details .container .article .find-posts .search .icon i {
+    bottom: 15px;
+  }
+}
+.article-details .container .article .find-posts .recent {
+  border: 1px solid #F0F0F0;
+  padding: 20px;
+  margin: 30px 0;
+}
+.article-details .container .article .find-posts .recent .header-title {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+.article-details .container .article .find-posts .recent .header-title::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #191919;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+.article-details .container .article .find-posts .recent .posts .item {
+  margin: 30px 0;
+  position: relative;
+}
+.article-details .container .article .find-posts .recent .posts .item .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+.article-details .container .article .find-posts .recent .posts .item .date {
+  color: #5f5e5e;
+}
+.article-details .container .article .find-posts .recent .posts .item::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  color: #191919;
+  background-color: #F0F0F0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.article-details .container .article .find-posts .categories {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #F0F0F0;
+  display: grid;
+  row-gap: 10px;
+}
+.article-details .container .article .find-posts .categories .name {
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 10px;
+}
+.article-details .container .article .find-posts .categories .name::after {
+  content: "";
+  width: 36px;
+  height: 2px;
+  background-color: #191919;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+.article-details .container .article .find-posts .categories .category {
+  font-weight: bold;
+  font-size: 16px;
+}
+.article-details .container .article .find-posts .categories .category span {
+  font-weight: 400;
+  color: #8c8989;
+  margin-left: 10PX;
+}

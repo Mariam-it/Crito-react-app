@@ -1,0 +1,116 @@
+.article {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .article .container .header {
+    display: grid;
+  }
+  @media (min-width: 768px) {
+    .article .container .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  }
+  .article .container .header .heading span {
+    color: #F94D1C;
+  }
+  .article .container .header .heading .title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .article .container .header .btn {
+    justify-self: center;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 10px 0;
+  }
+  .article .container .header .btn i {
+    margin-left: 10px;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+    
+  }
+  .article .container .carosell-items{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+  }
+  .article .container .carosell-items .boxes {
+    display: inline-flex;
+    animation: 55s slide infinite linear;
+    gap: 20px;
+  }
+  .article .container .carosell-items:hover .boxes {
+    animation-play-state: paused;
+  }
+  .article .container .carosell-items .boxes .box {
+    width: 400px;
+  }
+
+  .article .container .boxes {
+    display: grid;
+    row-gap: 40px;
+  }
+  @media (min-width: 768px) {
+    .article .container .boxes {
+      grid-template-columns: repeat(2, 1fr);
+      -moz-column-gap: 10px;
+           column-gap: 10px;
+    }
+  }
+  @media (min-width: 992px) {
+    .article .container .boxes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .article .container .boxes .box {
+    position: relative;
+  }
+  
+  .article .container .boxes .box img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    aspect-ratio: 1/0.7;
+  }
+  .article .container .boxes .box .date {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: grid;
+    background-color: #F9D783;
+    width: 50px;
+  }
+  .article .container .boxes .box .date span {
+    justify-self: center;
+    display: block;
+    font-weight: 500;
+  }
+  .article .container .boxes .box .title {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .article .current {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .article .current .circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: RGBA(25, 25, 25, 0.1);
+  }
+  .article .current .circle:nth-child(2) {
+    background-color: black;
+  }

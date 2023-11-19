@@ -1,0 +1,8 @@
+.under-construction{
+    display: flex;
+    justify-content: center;
+}
+.under-construction .construction{
+    max-width: 600px;
+    width: 100%;
+}

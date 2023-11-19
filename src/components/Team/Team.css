@@ -1,0 +1,79 @@
+.team {
+    background-color: #F9D783;
+  }
+  .team .container {
+    display: grid;
+  }
+  .team .container .heading {
+    margin-top: 20px;
+  }
+  .team .container .heading span {
+    color: #F94D1C;
+  }
+  .team .container .heading .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) {
+    .team .container .heading .title {
+      font-size: 30px;
+    }
+  }
+  .team .container .btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) {
+    .team .container .btn {
+      justify-self: flex-end;
+    }
+  }
+  .team .container .btn i {
+    margin-left: 8px;
+  }
+  @media (min-width: 768px) {
+    .team .container .boxes {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .team .container .boxes .box {
+    display: grid;
+    margin-bottom: 30px;
+  }
+  .team .container .boxes .box img {
+    width: 50%;
+    justify-self: center;
+  }
+  @media (min-width: 768px) {
+    .team .container .boxes .box img {
+      width: 70%;
+    }
+  }
+  .team .container .boxes .box .name {
+    margin-top: 10px;
+    font-weight: bold;
+    justify-self: center;
+  }
+  .team .container .boxes .box .title {
+    justify-self: center;
+  }
+  .team .container .current {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .team .container .current .circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: RGBA(25, 25, 25, 0.1);
+  }
+  .team .container .current .circle:nth-child(2) {
+    background-color: black;
+  }

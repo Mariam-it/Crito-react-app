@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* Grundstil för navigationsfältet */
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,400;1,500;1,700&display=swap");
+  margin: 0;
+  padding: 0;
+}
+body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  color: #191919;
+}
+body .btn {
+  padding: 5px 20px;
+  border-radius: 40px;
+  background-color: #F9D783;
+  transition: transform 1000ms;
+}
+body .btn:hover, body .btn:focus-visible {
+  transform: translateY(-0.75rem);
+  transition: transform 250ms;
+}
+
+
+.navbar {
+  background-color: #F0EFE9;
+}
+@media (min-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap !important;
+  }
+}
+.navbar .nav {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .navbar .nav {
+    display: flex;
+    gap: 40px;
+  }
+}
+.navbar .nav #nav-toggle:checked + .nav-burger + .navbar-menu {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .nav .nav-toggle {
+  display: none;
+}
+.navbar .nav-burger {
+  cursor: pointer;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  .navbar .nav-burger {
+    display: none;
+  }
+}
+.navbar .navbar-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-menu {
+    display: block;
+    gap: 20px;
+  }
+}
+.navbar .navbar-menu .information {
+  display: none;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-menu .information {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar .navbar-menu .information::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: RGBA(25, 25, 25, 0.1);
+    left: 0;
+    bottom: -6px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-menu .information .contact-Info {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-menu .information .contact-Info {
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .navbar-menu .information .contact-Info {
+    gap: 40px;
+  }
+}
+.navbar .navbar-menu .information .contact-Info li a i {
+  margin-left: 5px;
+  margin-right: 3px;
+}
+@media (min-width: 992px) {
+  .navbar .navbar-menu .information .contact-Info li a i {
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+}
+.navbar .navbar-menu .information .socialmedia a {
+  padding: 2px;
+}
+@media (min-width: 992px) {
+  .navbar .navbar-menu .information .socialmedia a {
+    padding: 4px;
+  }
+}
+.navbar .navbar-menu .home-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-menu .home-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navbar .navbar-menu .home-nav .menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-menu .home-nav .menu {
+    flex-direction: row;
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-menu .home-nav .menu {
+    gap: 20px;
+  }
+}
+.navbar .navbar-menu .home-nav .menu li {
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+.navbar .navbar-menu .home-nav .menu li a {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .navbar .navbar-menu .home-nav .menu li a {
+    font-weight: 500;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-menu .home-nav .menu li:hover a::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #0E1021;
+    position: absolute;
+    left: 25%;
+    bottom: -8px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu .home-nav .menu li:hover {
+    background-color: #F9D783;
+  }
+}
+.navbar .navbar-menu .home-nav .button {
+  margin-top: 10px;
+}
+.navbar .navbar-menu .home-nav .button .btn i {
+  margin-left: 10px;
+}
+.navbar .navbar-menu .home-nav .btn:hover {
+  background-color: #191919;
+  color: #FFFFFF;
+}
